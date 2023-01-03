@@ -12,6 +12,7 @@ namespace FindMaximum
         {
             Console.WriteLine("welcome to Genrics use cases");
             integerfindmax.FindMaxValue(20, 30, 40);
+            integerfindmax.FindMaxValue(20.30f, 30.45f, 65.99f);
             Console.ReadLine();
         }
     }
