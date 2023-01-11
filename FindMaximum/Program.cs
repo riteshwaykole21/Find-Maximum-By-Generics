@@ -16,7 +16,8 @@ namespace GenericsUCs
             Console.WriteLine("1:Find Max Num\n" +
                 "2:FindMax using Generic Method\n" +
                 "3:FindMax using Generic Class \n" +
-                "4 : Param Concept-takes any no of parameter");
+                "4 : Param Concept-takes any no of parameter \n" +
+                "5: Generic Concepts");
 
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -42,6 +43,12 @@ namespace GenericsUCs
                 case 4:
                     FindMaxParams.MaxValue(99, 23, 6, 23, 43); //using Parameter sample 1
                     FindMaxParams.MaxValue(65, 6, 23, 43);  //using parameter sample 2
+                    break;
+                case 5:  // UC5
+                         //we cannot write the Main() in generics class it will provide the error ,so always write generics class sepretaly
+                    int[] arr = { 23, 21, 32, 45, 65, 33 };
+                    GenericsMaximum<int> genericObj = new GenericsMaximum<int>(arr);
+                    genericObj.PrintMaxValues();
                     break;
                 default:
                     Console.WriteLine("Please choose number within given range!");

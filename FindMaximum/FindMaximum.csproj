@@ -46,6 +46,7 @@
     <Compile Include="FindMaxGenricClass.cs" />
     <Compile Include="FindMaxParams.cs" />
     <Compile Include="GenericFindMax.cs" />
+    <Compile Include="GenericsMaximum.cs" />
     <Compile Include="integerfindmax.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
