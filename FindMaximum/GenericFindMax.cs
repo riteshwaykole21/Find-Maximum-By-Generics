@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FindMaximum
+namespace GenericsUCs
 {
-    public class GenericFindMax<T> where T : IComparable
+    public class FindMaxGenericMethod<T> where T : IComparable
     {
-        public static void FindMaxValue (T first,T second, T third)
+        public static void FindMaxValue(T first, T second, T third)  //UC3-refactor 1 (find max using generic method)
         {
-            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)  //data type is unknown bcoz we are using generic in the method hence error will occur so 
             {
                 Console.WriteLine($"{first} is greater");
             }
@@ -23,7 +24,7 @@ namespace FindMaximum
                 Console.WriteLine($"{third} is greater ");
             }
             else
-                Console.WriteLine("All Number Are equal");
+                Console.WriteLine("All Numbers are Equal! ");
         }
     }
 }

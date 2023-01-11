@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FindMaxGenricClass.cs" />
+    <Compile Include="FindMaxParams.cs" />
     <Compile Include="GenericFindMax.cs" />
     <Compile Include="integerfindmax.cs" />
     <Compile Include="Program.cs" />
